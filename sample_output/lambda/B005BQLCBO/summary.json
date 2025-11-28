@@ -1,0 +1,87 @@
+{
+  "ASIN": "B005BQLCBO",
+  "Summary": {
+    "total_reviews": 36,
+    "sentiment_counts": {
+      "positive": 22,
+      "negative": 4,
+      "neutral": 1,
+      "mixed": 9
+    },
+    "common_positive_topics": [
+      {
+        "topic": "this album",
+        "mentions": 6
+      },
+      {
+        "topic": "every song",
+        "mentions": 2
+      },
+      {
+        "topic": "the difference",
+        "mentions": 2
+      },
+      {
+        "topic": "today",
+        "mentions": 2
+      },
+      {
+        "topic": "an album",
+        "mentions": 2
+      },
+      {
+        "topic": "great music",
+        "mentions": 2
+      },
+      {
+        "topic": "this cd",
+        "mentions": 2
+      },
+      {
+        "topic": "this lp",
+        "mentions": 2
+      },
+      {
+        "topic": "the greatest collaborative ive",
+        "mentions": 1
+      },
+      {
+        "topic": "i didnt",
+        "mentions": 1
+      }
+    ],
+    "common_negative_topics": [
+      {
+        "topic": "the vinyl",
+        "mentions": 1
+      },
+      {
+        "topic": "a few songs",
+        "mentions": 1
+      },
+      {
+        "topic": "complete bummer hes",
+        "mentions": 1
+      },
+      {
+        "topic": "not a need",
+        "mentions": 1
+      },
+      {
+        "topic": "a little",
+        "mentions": 1
+      }
+    ],
+    "positive_review_samples": [
+      "great...",
+      "the greatest collaborative ive ever heard from any duo...",
+      "i didnt listen to this until two years after its release despite liking all of kanyes music im not really a big jayz fan and that is why i avoided it  also that summer had other big releases bad vs ev..."
+    ],
+    "negative_review_samples": [
+      "the vinyl skips on a few songs as reported by other buyers...",
+      "complete bummer hes no longer relatable...",
+      "not a need to buy..."
+    ]
+  },
+  "Timestamp": 1764301977
+}

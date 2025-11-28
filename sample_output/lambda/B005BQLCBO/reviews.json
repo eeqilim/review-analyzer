@@ -1,0 +1,3159 @@
+[
+  {
+    "review": "eyyyy\nkanye and jay put together a nice album some of the songs i like more than others but that is usually the case with albums\ni kind of wish i had other songs like ham on it but it is what is\nsolid album\ngets me going",
+    "rating": 4.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.9527681469917297,
+        "Text": "eyyyy\nkanye and jay",
+        "BeginOffset": 0,
+        "EndOffset": 19
+      },
+      {
+        "Score": 0.9996094703674316,
+        "Text": "a nice album",
+        "BeginOffset": 33,
+        "EndOffset": 45
+      },
+      {
+        "Score": 0.9998461604118347,
+        "Text": "the songs",
+        "BeginOffset": 54,
+        "EndOffset": 63
+      },
+      {
+        "Score": 0.9996505975723267,
+        "Text": "the case",
+        "BeginOffset": 108,
+        "EndOffset": 116
+      },
+      {
+        "Score": 0.998292863368988,
+        "Text": "albums",
+        "BeginOffset": 122,
+        "EndOffset": 128
+      },
+      {
+        "Score": 0.7087841033935547,
+        "Text": "i kind",
+        "BeginOffset": 129,
+        "EndOffset": 135
+      },
+      {
+        "Score": 0.8960684537887573,
+        "Text": "wish i",
+        "BeginOffset": 139,
+        "EndOffset": 145
+      },
+      {
+        "Score": 0.9998877644538879,
+        "Text": "other songs",
+        "BeginOffset": 150,
+        "EndOffset": 161
+      },
+      {
+        "Score": 0.99863201379776,
+        "Text": "ham",
+        "BeginOffset": 167,
+        "EndOffset": 170
+      },
+      {
+        "Score": 0.9172312617301941,
+        "Text": "solid album",
+        "BeginOffset": 195,
+        "EndOffset": 206
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        6,
+        7,
+        20,
+        63,
+        109,
+        144,
+        178,
+        182,
+        222,
+        291,
+        315,
+        328,
+        361,
+        649
+      ],
+      "values": [
+        2.896056110175439,
+        3.466151725762548,
+        3.5069224038448623,
+        2.6402131867702163,
+        3.1259354337739245,
+        3.4624076703951374,
+        3.6644899938988607,
+        3.7597004359085155,
+        3.801078332936345,
+        3.9619313293121876,
+        4.104510354403417,
+        4.1963947168195315,
+        4.296299476305274,
+        4.397969324494887,
+        4.96496360026982
+      ]
+    }
+  },
+  {
+    "review": "the vinyl skips on a few songs as reported by other buyers",
+    "rating": 2.0,
+    "sentiment": "negative",
+    "key_phrases": [
+      {
+        "Score": 0.9999398589134216,
+        "Text": "the vinyl",
+        "BeginOffset": 0,
+        "EndOffset": 9
+      },
+      {
+        "Score": 0.9999819397926331,
+        "Text": "a few songs",
+        "BeginOffset": 19,
+        "EndOffset": 30
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        7,
+        145
+      ],
+      "values": [
+        1.7534612019224312,
+        3.835235160576068
+      ]
+    }
+  },
+  {
+    "review": "great",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        2
+      ],
+      "values": [
+        1.2305479005865827
+      ]
+    }
+  },
+  {
+    "review": "the greatest collaborative ive ever heard from any duo",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9956446886062622,
+        "Text": "the greatest collaborative ive",
+        "BeginOffset": 0,
+        "EndOffset": 30
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        37,
+        56,
+        69,
+        183
+      ],
+      "values": [
+        2.822666695797654,
+        3.001289637725168,
+        3.2155542941802566,
+        3.8236578760266595
+      ]
+    }
+  },
+  {
+    "review": "i didnt listen to this until two years after its release despite liking all of kanyes music im not really a big jayz fan and that is why i avoided it  also that summer had other big releases bad vs evil and carter iv\n\nbut once i started listening to it i was floored this is an example of what can happen when two heavyweights team up and have any producer they want to work with every song sounds different but they all blend together to make an incredible piece of work\n\nlyrically its a fair amount of bragging but lets be honest these two can get away with it that being said there are also some good raps with good substance in here too and that is the difference between a 4 star and a 5 star album the difference between something that sounds really hot today and an album that is a classic",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9029067754745483,
+        "Text": "i didnt",
+        "BeginOffset": 0,
+        "EndOffset": 7
+      },
+      {
+        "Score": 0.9988831877708435,
+        "Text": "two years",
+        "BeginOffset": 29,
+        "EndOffset": 38
+      },
+      {
+        "Score": 0.9998461604118347,
+        "Text": "its release",
+        "BeginOffset": 45,
+        "EndOffset": 56
+      },
+      {
+        "Score": 0.8812558054924011,
+        "Text": "kanyes music im",
+        "BeginOffset": 79,
+        "EndOffset": 94
+      },
+      {
+        "Score": 0.9439417719841003,
+        "Text": "a big jayz fan",
+        "BeginOffset": 106,
+        "EndOffset": 120
+      },
+      {
+        "Score": 0.9993482232093811,
+        "Text": "summer",
+        "BeginOffset": 161,
+        "EndOffset": 167
+      },
+      {
+        "Score": 0.9954797625541687,
+        "Text": "other big releases",
+        "BeginOffset": 172,
+        "EndOffset": 190
+      },
+      {
+        "Score": 0.69590163230896,
+        "Text": "bad vs evil and carter iv",
+        "BeginOffset": 191,
+        "EndOffset": 216
+      },
+      {
+        "Score": 0.9998735189437866,
+        "Text": "an example",
+        "BeginOffset": 275,
+        "EndOffset": 285
+      },
+      {
+        "Score": 0.9909029006958008,
+        "Text": "two heavyweights",
+        "BeginOffset": 310,
+        "EndOffset": 326
+      },
+      {
+        "Score": 0.9995672106742859,
+        "Text": "any producer",
+        "BeginOffset": 344,
+        "EndOffset": 356
+      },
+      {
+        "Score": 0.9997250437736511,
+        "Text": "every song",
+        "BeginOffset": 380,
+        "EndOffset": 390
+      },
+      {
+        "Score": 0.9992162585258484,
+        "Text": "an incredible piece",
+        "BeginOffset": 444,
+        "EndOffset": 463
+      },
+      {
+        "Score": 0.9572231769561768,
+        "Text": "work",
+        "BeginOffset": 467,
+        "EndOffset": 471
+      },
+      {
+        "Score": 0.9001322984695435,
+        "Text": "a fair amount",
+        "BeginOffset": 487,
+        "EndOffset": 500
+      },
+      {
+        "Score": 0.9126863479614258,
+        "Text": "bragging",
+        "BeginOffset": 504,
+        "EndOffset": 512
+      },
+      {
+        "Score": 0.9450498223304749,
+        "Text": "these two",
+        "BeginOffset": 532,
+        "EndOffset": 541
+      },
+      {
+        "Score": 0.9971303343772888,
+        "Text": "some good raps",
+        "BeginOffset": 594,
+        "EndOffset": 608
+      },
+      {
+        "Score": 0.9990699291229248,
+        "Text": "good substance",
+        "BeginOffset": 614,
+        "EndOffset": 628
+      },
+      {
+        "Score": 0.9975374341011047,
+        "Text": "the difference",
+        "BeginOffset": 653,
+        "EndOffset": 667
+      },
+      {
+        "Score": 0.9992806315422058,
+        "Text": "a 4 star",
+        "BeginOffset": 676,
+        "EndOffset": 684
+      },
+      {
+        "Score": 0.9922680854797363,
+        "Text": "a 5 star album",
+        "BeginOffset": 689,
+        "EndOffset": 703
+      },
+      {
+        "Score": 0.9984623193740845,
+        "Text": "the difference",
+        "BeginOffset": 704,
+        "EndOffset": 718
+      },
+      {
+        "Score": 0.9021367430686951,
+        "Text": "today",
+        "BeginOffset": 760,
+        "EndOffset": 765
+      },
+      {
+        "Score": 0.9943988919258118,
+        "Text": "an album",
+        "BeginOffset": 770,
+        "EndOffset": 778
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        1,
+        3,
+        8,
+        10,
+        14,
+        18,
+        23,
+        25,
+        28,
+        32,
+        35,
+        41,
+        44,
+        48,
+        50,
+        54,
+        66,
+        72,
+        78,
+        90,
+        93,
+        100,
+        108,
+        116,
+        117,
+        142,
+        176,
+        182,
+        185,
+        197,
+        298,
+        305,
+        311,
+        351,
+        362,
+        540,
+        555,
+        600,
+        623,
+        749,
+        803
+      ],
+      "values": [
+        2.9913763569877094,
+        2.896056110175439,
+        1.48402300579825,
+        3.2653805310980046,
+        2.3079125923112227,
+        4.683166799531697,
+        2.4333245325210884,
+        2.5781138811036612,
+        5.569164143755485,
+        2.6513392599012615,
+        2.761229347518685,
+        2.815700854219978,
+        8.92420369002011,
+        5.9661308207058035,
+        6.004040294711477,
+        2.9220003417726432,
+        2.9864972231358964,
+        3.14012838437202,
+        3.2211659623281426,
+        3.4146699066641015,
+        3.33674005655732,
+        3.4097342436901603,
+        3.440769151115156,
+        3.5001694440293436,
+        7.119256632966782,
+        3.534699381074952,
+        3.7443446079011946,
+        3.7649105901051527,
+        3.801078332936345,
+        3.7925691732526854,
+        3.991994216739954,
+        4.318363966489376,
+        8.527318752513024,
+        4.210795109668177,
+        4.438800428515896,
+        4.398406674162913,
+        4.760533271795521,
+        4.791319657243663,
+        4.8960863646840895,
+        5.095498633013874,
+        5.128083528804808,
+        5.2736129787636985
+      ]
+    }
+  },
+  {
+    "review": "great",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        2
+      ],
+      "values": [
+        1.2305479005865827
+      ]
+    }
+  },
+  {
+    "review": "i am very satisfied with this product",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        326,
+        985
+      ],
+      "values": [
+        4.2296463267668685,
+        5.345402424863937
+      ]
+    }
+  },
+  {
+    "review": "good album",
+    "rating": 4.0,
+    "sentiment": "positive",
+    "key_phrases": [],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        8
+      ],
+      "values": [
+        1.4480280550877196,
+        1.6326902655490023
+      ]
+    }
+  },
+  {
+    "review": "jay and kanye kill it",
+    "rating": 5.0,
+    "sentiment": "neutral",
+    "key_phrases": [
+      {
+        "Score": 0.996062695980072,
+        "Text": "jay and kanye",
+        "BeginOffset": 0,
+        "EndOffset": 13
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [],
+      "values": []
+    }
+  },
+  {
+    "review": "son likes it",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9898361563682556,
+        "Text": "son",
+        "BeginOffset": 0,
+        "EndOffset": 3
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        765,
+        867
+      ],
+      "values": [
+        5.088278385040387,
+        5.304524046255256
+      ]
+    }
+  },
+  {
+    "review": "jayz and kanye work well together",
+    "rating": 4.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.8617658615112305,
+        "Text": "jayz and kanye work",
+        "BeginOffset": 0,
+        "EndOffset": 19
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        16,
+        44,
+        182
+      ],
+      "values": [
+        2.43134938202021,
+        2.9830654103529017,
+        3.801078332936345
+      ]
+    }
+  },
+  {
+    "review": "easily one of yezzys best works",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9695583581924438,
+        "Text": "yezzys",
+        "BeginOffset": 14,
+        "EndOffset": 20
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        5,
+        11,
+        225,
+        598
+      ],
+      "values": [
+        1.594489699595127,
+        2.123171647736025,
+        4.055673612530723,
+        4.870161617341383
+      ]
+    }
+  },
+  {
+    "review": "complete bummer hes no longer relatable",
+    "rating": 1.0,
+    "sentiment": "negative",
+    "key_phrases": [
+      {
+        "Score": 0.9610477089881897,
+        "Text": "complete bummer hes",
+        "BeginOffset": 0,
+        "EndOffset": 19
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        286,
+        336,
+        717
+      ],
+      "values": [
+        4.258701791500759,
+        4.36623087437449,
+        5.0620290293940045
+      ]
+    }
+  },
+  {
+    "review": "not a need to buy",
+    "rating": 3.0,
+    "sentiment": "negative",
+    "key_phrases": [
+      {
+        "Score": 0.9279013276100159,
+        "Text": "not a need",
+        "BeginOffset": 0,
+        "EndOffset": 10
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        59,
+        204
+      ],
+      "values": [
+        2.9712903185227666,
+        3.857589143681262
+      ]
+    }
+  },
+  {
+    "review": "great addon to my kanye west collectioncheck out thethe nike air yeezy 2 collectionfor thehard core yeezy fans",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9728561043739319,
+        "Text": "great addon",
+        "BeginOffset": 0,
+        "EndOffset": 11
+      },
+      {
+        "Score": 0.8436070084571838,
+        "Text": "my kanye west collectioncheck",
+        "BeginOffset": 15,
+        "EndOffset": 44
+      },
+      {
+        "Score": 0.8650989532470703,
+        "Text": "thethe nike air yeezy",
+        "BeginOffset": 49,
+        "EndOffset": 70
+      },
+      {
+        "Score": 0.46275490522384644,
+        "Text": "2 collectionfor",
+        "BeginOffset": 71,
+        "EndOffset": 86
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        2,
+        85,
+        94
+      ],
+      "values": [
+        1.2305479005865827,
+        3.369224798008205,
+        3.5261144551708954
+      ]
+    }
+  },
+  {
+    "review": "if you are going to get watch the throne you need to get the deluxe version album cover is really cool and the disc itself is blacked out",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9980344772338867,
+        "Text": "the throne",
+        "BeginOffset": 30,
+        "EndOffset": 40
+      },
+      {
+        "Score": 0.9874283671379089,
+        "Text": "the deluxe version album cover",
+        "BeginOffset": 57,
+        "EndOffset": 87
+      },
+      {
+        "Score": 0.9991505146026611,
+        "Text": "the disc",
+        "BeginOffset": 107,
+        "EndOffset": 115
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        14,
+        18,
+        60,
+        68,
+        144,
+        204,
+        227,
+        322,
+        721,
+        881
+      ],
+      "values": [
+        1.4480280550877196,
+        2.3415833997658484,
+        4.866649065042177,
+        3.329804222653986,
+        3.504902018270007,
+        3.6644899938988607,
+        3.857589143681262,
+        4.053967259832514,
+        4.2837392091310775,
+        5.0952790699435,
+        5.514560369088009
+      ]
+    }
+  },
+  {
+    "review": "excellent",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        43
+      ],
+      "values": [
+        2.8307298818372297
+      ]
+    }
+  },
+  {
+    "review": "a little too repetitious for my liking",
+    "rating": 3.0,
+    "sentiment": "negative",
+    "key_phrases": [
+      {
+        "Score": 0.9863957762718201,
+        "Text": "a little",
+        "BeginOffset": 0,
+        "EndOffset": 8
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        62
+      ],
+      "values": [
+        3.1712147191871702
+      ]
+    }
+  },
+  {
+    "review": "this is a collaboration between jay z and kayne west probably two of the most popular rappers alive\n\nits a good cd but not great standout track is probably ns in paris\n\nif you like the two rappers involved then get it",
+    "rating": 4.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.9992748498916626,
+        "Text": "a collaboration",
+        "BeginOffset": 8,
+        "EndOffset": 23
+      },
+      {
+        "Score": 0.9482620358467102,
+        "Text": "jay z",
+        "BeginOffset": 32,
+        "EndOffset": 37
+      },
+      {
+        "Score": 0.5663577318191528,
+        "Text": "kayne west",
+        "BeginOffset": 42,
+        "EndOffset": 52
+      },
+      {
+        "Score": 0.9941338896751404,
+        "Text": "the most popular rappers",
+        "BeginOffset": 69,
+        "EndOffset": 93
+      },
+      {
+        "Score": 0.9493756294250488,
+        "Text": "a good cd",
+        "BeginOffset": 105,
+        "EndOffset": 114
+      },
+      {
+        "Score": 0.8379165530204773,
+        "Text": "great standout track",
+        "BeginOffset": 123,
+        "EndOffset": 143
+      },
+      {
+        "Score": 0.9753066897392273,
+        "Text": "ns",
+        "BeginOffset": 156,
+        "EndOffset": 158
+      },
+      {
+        "Score": 0.9994255304336548,
+        "Text": "paris",
+        "BeginOffset": 162,
+        "EndOffset": 167
+      },
+      {
+        "Score": 0.9996883273124695,
+        "Text": "the two rappers",
+        "BeginOffset": 181,
+        "EndOffset": 196
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        18,
+        38,
+        41,
+        168,
+        507,
+        886
+      ],
+      "values": [
+        1.9942509046584729,
+        1.2305479005865827,
+        1.4521504955131181,
+        1.733075862881274,
+        1.6326902655490023,
+        2.4333245325210884,
+        3.141527703598441,
+        5.949469126680073,
+        7.459450414354924,
+        4.743247160454642,
+        5.290282236279246
+      ]
+    }
+  },
+  {
+    "review": "great album came in on time and this is perhaps a great and amazing collaboration album between kanye and jay simply great packaging and amazing sound quality on this album perhaps one of my top favorite albums for now a must buy",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.7502874732017517,
+        "Text": "great album",
+        "BeginOffset": 0,
+        "EndOffset": 11
+      },
+      {
+        "Score": 0.9999396800994873,
+        "Text": "time",
+        "BeginOffset": 23,
+        "EndOffset": 27
+      },
+      {
+        "Score": 0.99024897813797,
+        "Text": "a great and amazing collaboration album",
+        "BeginOffset": 48,
+        "EndOffset": 87
+      },
+      {
+        "Score": 0.9703697562217712,
+        "Text": "kanye and jay",
+        "BeginOffset": 96,
+        "EndOffset": 109
+      },
+      {
+        "Score": 0.7735403776168823,
+        "Text": "great packaging",
+        "BeginOffset": 117,
+        "EndOffset": 132
+      },
+      {
+        "Score": 0.8209145069122314,
+        "Text": "amazing sound quality",
+        "BeginOffset": 137,
+        "EndOffset": 158
+      },
+      {
+        "Score": 0.9976981282234192,
+        "Text": "this album",
+        "BeginOffset": 162,
+        "EndOffset": 172
+      },
+      {
+        "Score": 0.6311295032501221,
+        "Text": "perhaps one",
+        "BeginOffset": 173,
+        "EndOffset": 184
+      },
+      {
+        "Score": 0.9975515007972717,
+        "Text": "my top favorite albums",
+        "BeginOffset": 188,
+        "EndOffset": 210
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        2,
+        5,
+        12,
+        13,
+        20,
+        45,
+        59,
+        65,
+        88,
+        97,
+        152,
+        154,
+        260,
+        354,
+        713
+      ],
+      "values": [
+        4.344084165263158,
+        3.691643701759748,
+        1.594489699595127,
+        2.301000820893556,
+        2.27066461031179,
+        2.6402131867702163,
+        2.867805576777379,
+        2.9712903185227666,
+        3.165397590244658,
+        3.241694692234899,
+        6.788700513371123,
+        3.6268838318561496,
+        3.695519245191686,
+        4.083219227565476,
+        8.857659608667868,
+        5.096817024767132
+      ]
+    }
+  },
+  {
+    "review": "this album is a beautiful collaboration between two of the best artists ever this album should definitely get a sequel or something kanye and jz should do make another collab",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9999425411224365,
+        "Text": "this album",
+        "BeginOffset": 0,
+        "EndOffset": 10
+      },
+      {
+        "Score": 0.9999255537986755,
+        "Text": "a beautiful collaboration",
+        "BeginOffset": 14,
+        "EndOffset": 39
+      },
+      {
+        "Score": 0.9995794892311096,
+        "Text": "the best artists",
+        "BeginOffset": 55,
+        "EndOffset": 71
+      },
+      {
+        "Score": 0.9762731790542603,
+        "Text": "this album",
+        "BeginOffset": 77,
+        "EndOffset": 87
+      },
+      {
+        "Score": 0.8665462136268616,
+        "Text": "a sequel or something kanye and jz",
+        "BeginOffset": 110,
+        "EndOffset": 144
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        11,
+        18,
+        41,
+        56,
+        57,
+        72,
+        81,
+        100,
+        200,
+        213
+      ],
+      "values": [
+        2.896056110175439,
+        2.123171647736025,
+        2.4333245325210884,
+        2.9747345633400366,
+        3.001289637725168,
+        3.0480183159495478,
+        3.2211659623281426,
+        3.2951391545099638,
+        3.440769151115156,
+        3.853522030805003,
+        3.9518746321557643
+      ]
+    }
+  },
+  {
+    "review": "is it jay or yes best album no is it better than most other albums even still yes its commercial for jayz standards a lot of the songs are radio friendly but the lyrics are still there jayzs workplay is still second to none kanyes production genius and his witty wordplay is still prevalant it has replay value while im not wowed by it because i know theyve been better its definitely worth having in my collection plus i still buy cds especially from them for the album art and they rarely disappoint the album art in the deluxe cd is phenomenal",
+    "rating": 4.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.7668814659118652,
+        "Text": "jay",
+        "BeginOffset": 6,
+        "EndOffset": 9
+      },
+      {
+        "Score": 0.6726407408714294,
+        "Text": "best album",
+        "BeginOffset": 17,
+        "EndOffset": 27
+      },
+      {
+        "Score": 0.9795231819152832,
+        "Text": "most other albums",
+        "BeginOffset": 49,
+        "EndOffset": 66
+      },
+      {
+        "Score": 0.9792312383651733,
+        "Text": "its commercial",
+        "BeginOffset": 82,
+        "EndOffset": 96
+      },
+      {
+        "Score": 0.9926300048828125,
+        "Text": "jayz standards",
+        "BeginOffset": 101,
+        "EndOffset": 115
+      },
+      {
+        "Score": 0.998437762260437,
+        "Text": "a lot",
+        "BeginOffset": 116,
+        "EndOffset": 121
+      },
+      {
+        "Score": 0.9998863339424133,
+        "Text": "the songs",
+        "BeginOffset": 125,
+        "EndOffset": 134
+      },
+      {
+        "Score": 0.6991194486618042,
+        "Text": "radio",
+        "BeginOffset": 139,
+        "EndOffset": 144
+      },
+      {
+        "Score": 0.9993931651115417,
+        "Text": "the lyrics",
+        "BeginOffset": 158,
+        "EndOffset": 168
+      },
+      {
+        "Score": 0.6890820860862732,
+        "Text": "jayzs workplay",
+        "BeginOffset": 185,
+        "EndOffset": 199
+      },
+      {
+        "Score": 0.912935733795166,
+        "Text": "none kanyes production genius",
+        "BeginOffset": 219,
+        "EndOffset": 248
+      },
+      {
+        "Score": 0.9991787672042847,
+        "Text": "his witty wordplay",
+        "BeginOffset": 253,
+        "EndOffset": 271
+      },
+      {
+        "Score": 0.9230276346206665,
+        "Text": "replay value",
+        "BeginOffset": 298,
+        "EndOffset": 310
+      },
+      {
+        "Score": 0.6522314548492432,
+        "Text": "im",
+        "BeginOffset": 317,
+        "EndOffset": 319
+      },
+      {
+        "Score": 0.6102902293205261,
+        "Text": "theyve",
+        "BeginOffset": 351,
+        "EndOffset": 357
+      },
+      {
+        "Score": 0.9994967579841614,
+        "Text": "my collection",
+        "BeginOffset": 401,
+        "EndOffset": 414
+      },
+      {
+        "Score": 0.9857694506645203,
+        "Text": "cds",
+        "BeginOffset": 432,
+        "EndOffset": 435
+      },
+      {
+        "Score": 0.9990123510360718,
+        "Text": "the album art",
+        "BeginOffset": 461,
+        "EndOffset": 474
+      },
+      {
+        "Score": 0.9971645474433899,
+        "Text": "the album art",
+        "BeginOffset": 502,
+        "EndOffset": 515
+      },
+      {
+        "Score": 0.9970918297767639,
+        "Text": "the deluxe cd",
+        "BeginOffset": 519,
+        "EndOffset": 532
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        4,
+        7,
+        11,
+        20,
+        22,
+        27,
+        29,
+        35,
+        36,
+        52,
+        59,
+        70,
+        75,
+        87,
+        89,
+        172,
+        173,
+        200,
+        220,
+        241,
+        242,
+        420,
+        454,
+        652,
+        657,
+        881,
+        897,
+        933,
+        934
+      ],
+      "values": [
+        4.344084165263158,
+        1.4521504955131181,
+        1.7534612019224312,
+        2.123171647736025,
+        2.6402131867702163,
+        13.10816030015016,
+        5.406778440116586,
+        2.766754518102775,
+        2.815700854219978,
+        2.770247466120603,
+        3.019246185145911,
+        2.9712903185227666,
+        3.2281996718348545,
+        3.374670986413444,
+        3.313743660942728,
+        3.2610392674000397,
+        3.811057550287244,
+        3.721243960043665,
+        3.853522030805003,
+        4.003201072723496,
+        4.054044758185713,
+        8.334492698690461,
+        4.5635537260669565,
+        9.358517627588332,
+        4.979327201251832,
+        4.950993418037321,
+        5.514560369088009,
+        5.31540850745368,
+        5.330848571558528,
+        5.279138581561087
+      ]
+    }
+  },
+  {
+    "review": "like order i will order again if needed it was a gift for my sister its great purchase thank you",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9985290765762329,
+        "Text": "order",
+        "BeginOffset": 5,
+        "EndOffset": 10
+      },
+      {
+        "Score": 0.9997222423553467,
+        "Text": "a gift",
+        "BeginOffset": 47,
+        "EndOffset": 53
+      },
+      {
+        "Score": 0.9988822340965271,
+        "Text": "my sister",
+        "BeginOffset": 58,
+        "EndOffset": 67
+      },
+      {
+        "Score": 0.9983188509941101,
+        "Text": "its great purchase",
+        "BeginOffset": 68,
+        "EndOffset": 86
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        2,
+        6,
+        226,
+        259,
+        395,
+        432,
+        805
+      ],
+      "values": [
+        1.2305479005865827,
+        1.733075862881274,
+        3.8998608640430814,
+        4.00460158155817,
+        4.407635480600534,
+        9.169346018495766,
+        5.157785263220742
+      ]
+    }
+  },
+  {
+    "review": "great music for all jayz and kanye fans  if you havent bought it yet get it and have their best",
+    "rating": 4.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9938037395477295,
+        "Text": "great music",
+        "BeginOffset": 0,
+        "EndOffset": 11
+      },
+      {
+        "Score": 0.9917130470275879,
+        "Text": "all jayz and kanye fans",
+        "BeginOffset": 16,
+        "EndOffset": 39
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        2,
+        3,
+        11,
+        18,
+        71,
+        85,
+        163,
+        461
+      ],
+      "values": [
+        0.9971254523292364,
+        1.2305479005865827,
+        1.48402300579825,
+        2.123171647736025,
+        2.4333245325210884,
+        3.1578096500355124,
+        3.369224798008205,
+        3.7301735874114064,
+        4.582830176029239
+      ]
+    }
+  },
+  {
+    "review": "first things first although they were good i usually skip the singles otis n in paris no church in the wild when i listen to the album now due to hot97 playing them a million times a day the rza produced new day is one of the gems on here they talk about their future kids then on thats my b finds jay spitting some interesting lines about the lack of black females in the art museum other bangers are murder to excellence gotta have it welcome to the jungle and why i love you which seems like hes taking shots at beanie sigel watch the throne ended up better than i thought it be lift off was terrible horrible rapsinging by kanye and a forgettable jay verse primetime and illest m alive were joints i could not get into but nonetheless the album was enjoyable 4 stars",
+    "rating": 4.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.783868134021759,
+        "Text": "first things",
+        "BeginOffset": 0,
+        "EndOffset": 12
+      },
+      {
+        "Score": 0.9374514818191528,
+        "Text": "the singles otis n",
+        "BeginOffset": 58,
+        "EndOffset": 76
+      },
+      {
+        "Score": 0.9888521432876587,
+        "Text": "paris",
+        "BeginOffset": 80,
+        "EndOffset": 85
+      },
+      {
+        "Score": 0.9973636865615845,
+        "Text": "no church",
+        "BeginOffset": 86,
+        "EndOffset": 95
+      },
+      {
+        "Score": 0.9769678711891174,
+        "Text": "the wild",
+        "BeginOffset": 99,
+        "EndOffset": 107
+      },
+      {
+        "Score": 0.9991368651390076,
+        "Text": "the album",
+        "BeginOffset": 125,
+        "EndOffset": 134
+      },
+      {
+        "Score": 0.8312600255012512,
+        "Text": "hot97",
+        "BeginOffset": 146,
+        "EndOffset": 151
+      },
+      {
+        "Score": 0.9742670655250549,
+        "Text": "a million times",
+        "BeginOffset": 165,
+        "EndOffset": 180
+      },
+      {
+        "Score": 0.9645487666130066,
+        "Text": "a day",
+        "BeginOffset": 181,
+        "EndOffset": 186
+      },
+      {
+        "Score": 0.9669673442840576,
+        "Text": "the rza",
+        "BeginOffset": 187,
+        "EndOffset": 194
+      },
+      {
+        "Score": 0.977586030960083,
+        "Text": "new day",
+        "BeginOffset": 204,
+        "EndOffset": 211
+      },
+      {
+        "Score": 0.9994390606880188,
+        "Text": "the gems",
+        "BeginOffset": 222,
+        "EndOffset": 230
+      },
+      {
+        "Score": 0.9993032217025757,
+        "Text": "their future kids",
+        "BeginOffset": 255,
+        "EndOffset": 272
+      },
+      {
+        "Score": 0.9588959813117981,
+        "Text": "my b",
+        "BeginOffset": 287,
+        "EndOffset": 291
+      },
+      {
+        "Score": 0.8737271428108215,
+        "Text": "jay",
+        "BeginOffset": 298,
+        "EndOffset": 301
+      },
+      {
+        "Score": 0.9959115386009216,
+        "Text": "some interesting lines",
+        "BeginOffset": 311,
+        "EndOffset": 333
+      },
+      {
+        "Score": 0.9998632073402405,
+        "Text": "the lack",
+        "BeginOffset": 340,
+        "EndOffset": 348
+      },
+      {
+        "Score": 0.9996986985206604,
+        "Text": "black females",
+        "BeginOffset": 352,
+        "EndOffset": 365
+      },
+      {
+        "Score": 0.9662478566169739,
+        "Text": "the art museum",
+        "BeginOffset": 369,
+        "EndOffset": 383
+      },
+      {
+        "Score": 0.930638313293457,
+        "Text": "other bangers",
+        "BeginOffset": 384,
+        "EndOffset": 397
+      },
+      {
+        "Score": 0.5784325003623962,
+        "Text": "murder",
+        "BeginOffset": 402,
+        "EndOffset": 408
+      },
+      {
+        "Score": 0.7420130968093872,
+        "Text": "excellence",
+        "BeginOffset": 412,
+        "EndOffset": 422
+      },
+      {
+        "Score": 0.986364483833313,
+        "Text": "ta",
+        "BeginOffset": 426,
+        "EndOffset": 428
+      },
+      {
+        "Score": 0.9996862411499023,
+        "Text": "the jungle",
+        "BeginOffset": 448,
+        "EndOffset": 458
+      },
+      {
+        "Score": 0.8844994902610779,
+        "Text": "hes",
+        "BeginOffset": 495,
+        "EndOffset": 498
+      },
+      {
+        "Score": 0.9226436614990234,
+        "Text": "shots",
+        "BeginOffset": 506,
+        "EndOffset": 511
+      },
+      {
+        "Score": 0.8997613191604614,
+        "Text": "beanie sigel watch",
+        "BeginOffset": 515,
+        "EndOffset": 533
+      },
+      {
+        "Score": 0.9973676204681396,
+        "Text": "the throne",
+        "BeginOffset": 534,
+        "EndOffset": 544
+      },
+      {
+        "Score": 0.5424837470054626,
+        "Text": "rapsinging",
+        "BeginOffset": 613,
+        "EndOffset": 623
+      },
+      {
+        "Score": 0.995536208152771,
+        "Text": "kanye",
+        "BeginOffset": 627,
+        "EndOffset": 632
+      },
+      {
+        "Score": 0.8081759214401245,
+        "Text": "a forgettable jay verse primetime and illest m",
+        "BeginOffset": 637,
+        "EndOffset": 683
+      },
+      {
+        "Score": 0.7660235166549683,
+        "Text": "joints",
+        "BeginOffset": 695,
+        "EndOffset": 701
+      },
+      {
+        "Score": 0.9977017641067505,
+        "Text": "the album",
+        "BeginOffset": 739,
+        "EndOffset": 748
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        5,
+        6,
+        8,
+        9,
+        15,
+        18,
+        21,
+        23,
+        27,
+        95,
+        114,
+        120,
+        127,
+        136,
+        193,
+        197,
+        198,
+        234,
+        249,
+        255,
+        286,
+        318,
+        380,
+        408,
+        454,
+        578,
+        601,
+        649,
+        672,
+        690,
+        721,
+        758,
+        876,
+        886,
+        918,
+        919,
+        935
+      ],
+      "values": [
+        2.896056110175439,
+        1.594489699595127,
+        1.733075862881274,
+        1.6326902655490023,
+        1.7338522781654186,
+        4.857413292184419,
+        2.4333245325210884,
+        2.6546803285227365,
+        2.5781138811036612,
+        2.703389220058293,
+        3.442743817219069,
+        3.5065592421281147,
+        7.136156002477539,
+        3.752738182174588,
+        3.6495876755961616,
+        3.8098426309299334,
+        3.991994216739954,
+        3.8988649472194044,
+        4.002759213963822,
+        4.087136881986508,
+        4.069351577933024,
+        4.258701791500759,
+        4.411506096436478,
+        4.386016558046343,
+        4.513977591429201,
+        4.679258813794166,
+        4.834013103225072,
+        5.094620669831929,
+        4.96496360026982,
+        4.980109520869279,
+        5.128310414795572,
+        5.0952790699435,
+        5.329737768889466,
+        5.25181092133271,
+        5.290282236279246,
+        5.316229637922699,
+        5.3740003131206935,
+        5.415160823493977
+      ]
+    }
+  },
+  {
+    "review": "i brought this cd before i saw both jayz and kanye west in concert in dc a few months i love this cd especially when i am angry great music regardlessbe a believer and watch the throne",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9996539354324341,
+        "Text": "this cd",
+        "BeginOffset": 10,
+        "EndOffset": 17
+      },
+      {
+        "Score": 0.8665329813957214,
+        "Text": "both jayz and kanye west",
+        "BeginOffset": 31,
+        "EndOffset": 55
+      },
+      {
+        "Score": 0.998589813709259,
+        "Text": "concert",
+        "BeginOffset": 59,
+        "EndOffset": 66
+      },
+      {
+        "Score": 0.9502934217453003,
+        "Text": "dc",
+        "BeginOffset": 70,
+        "EndOffset": 72
+      },
+      {
+        "Score": 0.9976707696914673,
+        "Text": "a few months",
+        "BeginOffset": 73,
+        "EndOffset": 85
+      },
+      {
+        "Score": 0.9984138607978821,
+        "Text": "this cd",
+        "BeginOffset": 93,
+        "EndOffset": 100
+      },
+      {
+        "Score": 0.907254159450531,
+        "Text": "great music",
+        "BeginOffset": 128,
+        "EndOffset": 139
+      },
+      {
+        "Score": 0.8878903388977051,
+        "Text": "a believer",
+        "BeginOffset": 153,
+        "EndOffset": 163
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        2,
+        3,
+        4,
+        9,
+        149,
+        173,
+        278,
+        592,
+        721
+      ],
+      "values": [
+        1.2305479005865827,
+        1.48402300579825,
+        2.9043009910262363,
+        1.7338522781654186,
+        3.8562527980689176,
+        3.721243960043665,
+        4.081704256977113,
+        4.833168151759508,
+        5.0952790699435
+      ]
+    }
+  },
+  {
+    "review": "what can i say i love this album but the shipper suckedi didnt even get my gift note but anyway kanye and jay z are awesome d",
+    "rating": 5.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.999923586845398,
+        "Text": "this album",
+        "BeginOffset": 22,
+        "EndOffset": 32
+      },
+      {
+        "Score": 0.9837160706520081,
+        "Text": "the shipper suckedi didnt",
+        "BeginOffset": 37,
+        "EndOffset": 62
+      },
+      {
+        "Score": 0.9766123294830322,
+        "Text": "my gift note",
+        "BeginOffset": 72,
+        "EndOffset": 84
+      },
+      {
+        "Score": 0.9512172937393188,
+        "Text": "kanye and jay z",
+        "BeginOffset": 96,
+        "EndOffset": 111
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        9,
+        18,
+        29,
+        49,
+        99,
+        117,
+        395,
+        418,
+        619
+      ],
+      "values": [
+        1.4480280550877196,
+        1.7338522781654186,
+        2.4333245325210884,
+        2.766754518102775,
+        2.9650108630379233,
+        3.3479231324033702,
+        3.534699381074952,
+        4.407635480600534,
+        4.590089496497934,
+        4.907848012982339
+      ]
+    }
+  },
+  {
+    "review": "this lp really pushing the culture forward  the music  lyrics are so on point  this is art  this is one of the top lps of the past few years  this lp was well thought out that is really missing in hiphop",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.999101996421814,
+        "Text": "this lp",
+        "BeginOffset": 0,
+        "EndOffset": 7
+      },
+      {
+        "Score": 0.9999467730522156,
+        "Text": "the culture",
+        "BeginOffset": 23,
+        "EndOffset": 34
+      },
+      {
+        "Score": 0.9889600276947021,
+        "Text": "the music  lyrics",
+        "BeginOffset": 44,
+        "EndOffset": 61
+      },
+      {
+        "Score": 0.993429958820343,
+        "Text": "point",
+        "BeginOffset": 72,
+        "EndOffset": 77
+      },
+      {
+        "Score": 0.9846531748771667,
+        "Text": "art",
+        "BeginOffset": 87,
+        "EndOffset": 90
+      },
+      {
+        "Score": 0.9999358057975769,
+        "Text": "the top lps",
+        "BeginOffset": 107,
+        "EndOffset": 118
+      },
+      {
+        "Score": 0.9999774694442749,
+        "Text": "the past few years",
+        "BeginOffset": 122,
+        "EndOffset": 140
+      },
+      {
+        "Score": 0.9996356964111328,
+        "Text": "this lp",
+        "BeginOffset": 142,
+        "EndOffset": 149
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        3,
+        5,
+        14,
+        16,
+        32,
+        75,
+        154,
+        193,
+        264,
+        312,
+        313,
+        454,
+        494,
+        495,
+        967
+      ],
+      "values": [
+        4.985627261646182,
+        1.48402300579825,
+        1.594489699595127,
+        4.683166799531697,
+        2.43134938202021,
+        2.761229347518685,
+        3.374670986413444,
+        3.695519245191686,
+        3.8098426309299334,
+        8.562997824170768,
+        4.243319050577427,
+        4.219444501233774,
+        4.679258813794166,
+        4.71658703932474,
+        4.65805154242938,
+        5.509564521894638
+      ]
+    }
+  },
+  {
+    "review": "make no mistake about it this is a concept album there have been really great ones in rock but not many in this genre this is a very well thought out and creative concept album about the fame legacy persona and personal life of two mega black hip hop moguls every song connects and not always smoothly but thats life i really love the jagged and unexpected moments that this album offers this is definitely a big picture cd those looking for lyrical genius hype beats and technical rapping skill will find it here and there but thats not what this album is about and so it may go over the heads of many theres really nothing like this out there right now",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9980631470680237,
+        "Text": "no mistake",
+        "BeginOffset": 5,
+        "EndOffset": 15
+      },
+      {
+        "Score": 0.9928475618362427,
+        "Text": "a concept album",
+        "BeginOffset": 33,
+        "EndOffset": 48
+      },
+      {
+        "Score": 0.7202699184417725,
+        "Text": "great ones",
+        "BeginOffset": 72,
+        "EndOffset": 82
+      },
+      {
+        "Score": 0.9921026825904846,
+        "Text": "rock",
+        "BeginOffset": 86,
+        "EndOffset": 90
+      },
+      {
+        "Score": 0.9996396899223328,
+        "Text": "this genre",
+        "BeginOffset": 107,
+        "EndOffset": 117
+      },
+      {
+        "Score": 0.8500080108642578,
+        "Text": "creative concept album",
+        "BeginOffset": 154,
+        "EndOffset": 176
+      },
+      {
+        "Score": 0.9850674867630005,
+        "Text": "the fame legacy persona",
+        "BeginOffset": 183,
+        "EndOffset": 206
+      },
+      {
+        "Score": 0.9039471745491028,
+        "Text": "personal life",
+        "BeginOffset": 211,
+        "EndOffset": 224
+      },
+      {
+        "Score": 0.9475537538528442,
+        "Text": "two mega black hip hop moguls",
+        "BeginOffset": 228,
+        "EndOffset": 257
+      },
+      {
+        "Score": 0.998062789440155,
+        "Text": "every song",
+        "BeginOffset": 258,
+        "EndOffset": 268
+      },
+      {
+        "Score": 0.5990614891052246,
+        "Text": "life i",
+        "BeginOffset": 312,
+        "EndOffset": 318
+      },
+      {
+        "Score": 0.9923290610313416,
+        "Text": "the jagged and unexpected moments",
+        "BeginOffset": 331,
+        "EndOffset": 364
+      },
+      {
+        "Score": 0.999360978603363,
+        "Text": "this album",
+        "BeginOffset": 370,
+        "EndOffset": 380
+      },
+      {
+        "Score": 0.8867945671081543,
+        "Text": "a big picture cd",
+        "BeginOffset": 407,
+        "EndOffset": 423
+      },
+      {
+        "Score": 0.9660004377365112,
+        "Text": "lyrical genius hype beats",
+        "BeginOffset": 442,
+        "EndOffset": 467
+      },
+      {
+        "Score": 0.9853237271308899,
+        "Text": "technical rapping skill",
+        "BeginOffset": 472,
+        "EndOffset": 495
+      },
+      {
+        "Score": 0.9946268200874329,
+        "Text": "this album",
+        "BeginOffset": 543,
+        "EndOffset": 553
+      },
+      {
+        "Score": 0.9988778829574585,
+        "Text": "the heads",
+        "BeginOffset": 585,
+        "EndOffset": 594
+      },
+      {
+        "Score": 0.771218478679657,
+        "Text": "many theres",
+        "BeginOffset": 598,
+        "EndOffset": 609
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        2,
+        4,
+        6,
+        9,
+        10,
+        14,
+        16,
+        30,
+        31,
+        41,
+        51,
+        54,
+        72,
+        76,
+        83,
+        106,
+        115,
+        116,
+        136,
+        137,
+        187,
+        193,
+        200,
+        202,
+        246,
+        318,
+        352,
+        465,
+        499,
+        590,
+        618,
+        652,
+        725,
+        844,
+        971
+      ],
+      "values": [
+        5.792112220350878,
+        1.2305479005865827,
+        1.4521504955131181,
+        1.733075862881274,
+        1.7338522781654186,
+        2.3079125923112227,
+        7.024750199297545,
+        2.43134938202021,
+        5.533038473131886,
+        2.8996901752589896,
+        2.9747345633400366,
+        2.970529453198571,
+        2.9864972231358964,
+        3.2211659623281426,
+        3.236582750405529,
+        3.2847793600125237,
+        3.4806297331591374,
+        3.5819024425938157,
+        3.559628316483391,
+        7.299175351192323,
+        7.417310909162973,
+        3.8054206592818463,
+        3.8098426309299334,
+        3.853522030805003,
+        3.978034277908947,
+        3.9658973401764306,
+        4.411506096436478,
+        4.3524535096851045,
+        4.632850712788278,
+        4.721711391156002,
+        4.938340997340776,
+        4.992710593297296,
+        4.979327201251832,
+        5.0952790699435,
+        5.297512151290936,
+        5.551286699974623
+      ]
+    }
+  },
+  {
+    "review": "jay z carries the collaboration steps up lyrically beats at time seem over produced kanye complains his way through the album seems to have lost his creative flair since he is so concerned that now everyone hates him because his actions have lead everyone to hate him needs to get over himself",
+    "rating": 2.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.9585717916488647,
+        "Text": "jay z",
+        "BeginOffset": 0,
+        "EndOffset": 5
+      },
+      {
+        "Score": 0.9996283650398254,
+        "Text": "the collaboration",
+        "BeginOffset": 14,
+        "EndOffset": 31
+      },
+      {
+        "Score": 0.546632707118988,
+        "Text": "lyrically beats",
+        "BeginOffset": 41,
+        "EndOffset": 56
+      },
+      {
+        "Score": 0.9989663362503052,
+        "Text": "time",
+        "BeginOffset": 60,
+        "EndOffset": 64
+      },
+      {
+        "Score": 0.6176079511642456,
+        "Text": "produced kanye",
+        "BeginOffset": 75,
+        "EndOffset": 89
+      },
+      {
+        "Score": 0.9997051954269409,
+        "Text": "his way",
+        "BeginOffset": 100,
+        "EndOffset": 107
+      },
+      {
+        "Score": 0.9998824596405029,
+        "Text": "the album",
+        "BeginOffset": 116,
+        "EndOffset": 125
+      },
+      {
+        "Score": 0.9999616146087646,
+        "Text": "his creative flair",
+        "BeginOffset": 145,
+        "EndOffset": 163
+      },
+      {
+        "Score": 0.9998804330825806,
+        "Text": "his actions",
+        "BeginOffset": 225,
+        "EndOffset": 236
+      },
+      {
+        "Score": 0.7887374758720398,
+        "Text": "lead everyone",
+        "BeginOffset": 242,
+        "EndOffset": 255
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        13,
+        18,
+        42,
+        74,
+        198,
+        333,
+        356,
+        371,
+        373,
+        408,
+        618,
+        685,
+        725,
+        916
+      ],
+      "values": [
+        1.4480280550877196,
+        2.27066461031179,
+        2.4333245325210884,
+        2.909857007263807,
+        3.219247060562741,
+        3.8988649472194044,
+        4.298573215607232,
+        4.514468750574634,
+        4.4094030462396985,
+        8.758898547703806,
+        4.513977591429201,
+        4.992710593297296,
+        4.987375139478332,
+        5.0952790699435,
+        5.337539424509451
+      ]
+    }
+  },
+  {
+    "review": "i really like this album  it may not have a lot of singles but it is very solid throughout the entirety of the cd it is rapsnbspa datahookproductlinklinked classalinknormal hrefchinesedemocracydpb0037bbkikrefcmcrarpdrvwtxtieutf8chinese democracya very good all the way through  albums today are not made like that anymore  it seems to be more about the single than it is about album quality  this is quality through and through you are really getting what you paid for\n\nkeep the industry alive",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9996954798698425,
+        "Text": "this album",
+        "BeginOffset": 14,
+        "EndOffset": 24
+      },
+      {
+        "Score": 0.9999382495880127,
+        "Text": "a lot",
+        "BeginOffset": 42,
+        "EndOffset": 47
+      },
+      {
+        "Score": 0.9988364577293396,
+        "Text": "singles",
+        "BeginOffset": 51,
+        "EndOffset": 58
+      },
+      {
+        "Score": 0.9998487234115601,
+        "Text": "the entirety",
+        "BeginOffset": 91,
+        "EndOffset": 103
+      },
+      {
+        "Score": 0.9997748732566833,
+        "Text": "the cd",
+        "BeginOffset": 107,
+        "EndOffset": 113
+      },
+      {
+        "Score": 0.6294239163398743,
+        "Text": "rapsnbspa datahookproductlinklinked classalinknormal hrefchinesedemocracydpb0037bbkikrefcmcrarpdrvwtxtieutf8chinese democracya",
+        "BeginOffset": 120,
+        "EndOffset": 246
+      },
+      {
+        "Score": 0.9079095721244812,
+        "Text": "all the way",
+        "BeginOffset": 257,
+        "EndOffset": 268
+      },
+      {
+        "Score": 0.9958388805389404,
+        "Text": "albums",
+        "BeginOffset": 278,
+        "EndOffset": 284
+      },
+      {
+        "Score": 0.9605045914649963,
+        "Text": "today",
+        "BeginOffset": 285,
+        "EndOffset": 290
+      },
+      {
+        "Score": 0.9111301898956299,
+        "Text": "the single",
+        "BeginOffset": 349,
+        "EndOffset": 359
+      },
+      {
+        "Score": 0.9862446784973145,
+        "Text": "album quality",
+        "BeginOffset": 377,
+        "EndOffset": 390
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        1,
+        4,
+        6,
+        8,
+        14,
+        20,
+        42,
+        65,
+        87,
+        92,
+        115,
+        198,
+        209,
+        265,
+        269,
+        311,
+        328,
+        406,
+        407,
+        412,
+        601,
+        886
+      ],
+      "values": [
+        4.985627261646182,
+        2.896056110175439,
+        1.4521504955131181,
+        3.466151725762548,
+        1.6326902655490023,
+        4.683166799531697,
+        2.6402131867702163,
+        2.909857007263807,
+        6.330795180489316,
+        3.313743660942728,
+        3.367311967803431,
+        3.5819024425938157,
+        3.8988649472194044,
+        4.053967259832514,
+        4.052186453353611,
+        4.046401408873145,
+        4.210795109668177,
+        4.296299476305274,
+        5.257733431241091,
+        5.257733431241091,
+        4.563682733356047,
+        5.094620669831929,
+        5.290282236279246
+      ]
+    }
+  },
+  {
+    "review": "i missed what was wrong with the album i have listened to it five or six times now i like all sixteen tracks no its not perfect but what album is to me it seems as if both kanye and jay z are charged and enjoying each others company as they trade verses over outstanding production jay z is far more interesting in my opinion when he shares the stage with the likes of kanye west who is decadent and bombastic i often find jay z to be a bit bland monochromatic if you will on many of his albums on watch the throne kanye pushes jay z to loosen up a bit take some chances and get back to his formal glory and he certainly does so kanye west proved with his last album my beautiful dark twisted fantasy that he has no peers in hip hop today and while this album isnt as good as that its still worth five stars",
+    "rating": 5.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.9996749758720398,
+        "Text": "the album",
+        "BeginOffset": 29,
+        "EndOffset": 38
+      },
+      {
+        "Score": 0.8981341123580933,
+        "Text": "five or six times",
+        "BeginOffset": 61,
+        "EndOffset": 78
+      },
+      {
+        "Score": 0.9091017246246338,
+        "Text": "all sixteen tracks",
+        "BeginOffset": 90,
+        "EndOffset": 108
+      },
+      {
+        "Score": 0.6619508862495422,
+        "Text": "album",
+        "BeginOffset": 137,
+        "EndOffset": 142
+      },
+      {
+        "Score": 0.9446094036102295,
+        "Text": "both kanye and jay z",
+        "BeginOffset": 167,
+        "EndOffset": 187
+      },
+      {
+        "Score": 0.9774827361106873,
+        "Text": "each others company",
+        "BeginOffset": 213,
+        "EndOffset": 232
+      },
+      {
+        "Score": 0.9955747127532959,
+        "Text": "verses",
+        "BeginOffset": 247,
+        "EndOffset": 253
+      },
+      {
+        "Score": 0.952431857585907,
+        "Text": "outstanding production jay z",
+        "BeginOffset": 259,
+        "EndOffset": 287
+      },
+      {
+        "Score": 0.999862551689148,
+        "Text": "my opinion",
+        "BeginOffset": 315,
+        "EndOffset": 325
+      },
+      {
+        "Score": 0.9997866153717041,
+        "Text": "the stage",
+        "BeginOffset": 341,
+        "EndOffset": 350
+      },
+      {
+        "Score": 0.9983150959014893,
+        "Text": "the likes",
+        "BeginOffset": 356,
+        "EndOffset": 365
+      },
+      {
+        "Score": 0.9688759446144104,
+        "Text": "kanye west",
+        "BeginOffset": 369,
+        "EndOffset": 379
+      },
+      {
+        "Score": 0.9273762702941895,
+        "Text": "jay z",
+        "BeginOffset": 423,
+        "EndOffset": 428
+      },
+      {
+        "Score": 0.9819957613945007,
+        "Text": "a bit",
+        "BeginOffset": 435,
+        "EndOffset": 440
+      },
+      {
+        "Score": 0.9986157417297363,
+        "Text": "his albums",
+        "BeginOffset": 484,
+        "EndOffset": 494
+      },
+      {
+        "Score": 0.9863096475601196,
+        "Text": "the throne kanye",
+        "BeginOffset": 504,
+        "EndOffset": 520
+      },
+      {
+        "Score": 0.8672325611114502,
+        "Text": "jay z",
+        "BeginOffset": 528,
+        "EndOffset": 533
+      },
+      {
+        "Score": 0.9977874755859375,
+        "Text": "a bit",
+        "BeginOffset": 547,
+        "EndOffset": 552
+      },
+      {
+        "Score": 0.9996739029884338,
+        "Text": "some chances",
+        "BeginOffset": 558,
+        "EndOffset": 570
+      },
+      {
+        "Score": 0.9998809099197388,
+        "Text": "his formal glory",
+        "BeginOffset": 587,
+        "EndOffset": 603
+      },
+      {
+        "Score": 0.8538740277290344,
+        "Text": "kanye west",
+        "BeginOffset": 629,
+        "EndOffset": 639
+      },
+      {
+        "Score": 0.9976588487625122,
+        "Text": "his last album",
+        "BeginOffset": 652,
+        "EndOffset": 666
+      },
+      {
+        "Score": 0.9682947397232056,
+        "Text": "my beautiful dark twisted fantasy",
+        "BeginOffset": 667,
+        "EndOffset": 700
+      },
+      {
+        "Score": 0.9762923717498779,
+        "Text": "no peers",
+        "BeginOffset": 713,
+        "EndOffset": 721
+      },
+      {
+        "Score": 0.9896622896194458,
+        "Text": "hip hop",
+        "BeginOffset": 725,
+        "EndOffset": 732
+      },
+      {
+        "Score": 0.9237035512924194,
+        "Text": "today",
+        "BeginOffset": 733,
+        "EndOffset": 738
+      },
+      {
+        "Score": 0.9838154911994934,
+        "Text": "this album",
+        "BeginOffset": 749,
+        "EndOffset": 759
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        1,
+        6,
+        8,
+        18,
+        20,
+        22,
+        26,
+        30,
+        33,
+        81,
+        83,
+        89,
+        91,
+        103,
+        114,
+        127,
+        140,
+        156,
+        164,
+        178,
+        198,
+        211,
+        219,
+        220,
+        255,
+        296,
+        311,
+        319,
+        321,
+        348,
+        357,
+        398,
+        456,
+        522,
+        709,
+        721,
+        765,
+        830,
+        909,
+        971,
+        987
+      ],
+      "values": [
+        5.792112220350878,
+        1.733075862881274,
+        1.6326902655490023,
+        2.4333245325210884,
+        2.6402131867702163,
+        2.621632060030032,
+        2.699261619423727,
+        2.766519236565943,
+        2.977847201041708,
+        3.2951391545099638,
+        3.2847793600125237,
+        3.2610392674000397,
+        3.37212051515587,
+        7.025529154054404,
+        3.5065592421281147,
+        3.752738182174588,
+        3.6654353721205317,
+        3.6501567539632616,
+        3.7028564340085444,
+        3.7597004359085155,
+        3.8988649472194044,
+        3.8720849398071544,
+        3.97209019194335,
+        4.003201072723496,
+        4.069351577933024,
+        4.1290175423861895,
+        4.210795109668177,
+        4.256327057542205,
+        4.208169604561233,
+        8.832341396816705,
+        4.386881049131088,
+        4.439825777509175,
+        4.7229209467918265,
+        4.842672636071072,
+        5.0165713744242035,
+        5.0952790699435,
+        5.088278385040387,
+        5.166705510162968,
+        5.343149537400218,
+        5.551286699974623,
+        5.456196968310767
+      ]
+    }
+  },
+  {
+    "review": "beautiful cover  intriguing concepts  otis is a modern masterpiece  this song will sweep the charts and awards  im looking forward to an album of otis remixes",
+    "rating": 3.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.9948356747627258,
+        "Text": "beautiful cover",
+        "BeginOffset": 0,
+        "EndOffset": 15
+      },
+      {
+        "Score": 0.9314258098602295,
+        "Text": "concepts",
+        "BeginOffset": 28,
+        "EndOffset": 36
+      },
+      {
+        "Score": 0.9799689650535583,
+        "Text": "otis",
+        "BeginOffset": 38,
+        "EndOffset": 42
+      },
+      {
+        "Score": 0.9998930096626282,
+        "Text": "a modern masterpiece",
+        "BeginOffset": 46,
+        "EndOffset": 66
+      },
+      {
+        "Score": 0.999758243560791,
+        "Text": "this song",
+        "BeginOffset": 68,
+        "EndOffset": 77
+      },
+      {
+        "Score": 0.9358516931533813,
+        "Text": "the charts and awards  im",
+        "BeginOffset": 89,
+        "EndOffset": 114
+      },
+      {
+        "Score": 0.9986798167228699,
+        "Text": "an album",
+        "BeginOffset": 134,
+        "EndOffset": 142
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        1,
+        10,
+        35,
+        81,
+        227,
+        246,
+        415,
+        495,
+        538
+      ],
+      "values": [
+        3.9885018093169458,
+        1.4480280550877196,
+        2.3079125923112227,
+        2.815700854219978,
+        3.2951391545099638,
+        4.053967259832514,
+        3.9658973401764306,
+        4.597135055719301,
+        4.65805154242938,
+        4.762262696014004
+      ]
+    }
+  },
+  {
+    "review": "its okay\n\ndid i expect more  absolutely especially given who was involved i thought this was going to be something epic  from beginning to end i found it to be more of a kanye west albumbe it left over tracks that didnt make the cut for my beautiful dark twisted fantasy or a followup to that albumand jay just hopped on last minute  seemed like jay was on this for sympathy this just seems like another kanyemotivated vehicle to resuscitate his wanning popularity since 808s  heartbreak\n\nthe album does flow  the tracks are decent but again with these being the two biggest names in hiphop today i thought this was going to be the second coming or something  both have the ability to falter on certain tracks i find kanye to be more lyrical and in his element and less just flat out stupid and uninspiring as most of his lyrics postgraduation on tracks better suited for conscience rappers like new day and the joy over jay  jay however remains supreme and shows kanye how its done on just about every other track from nas in paris to thats my bitch\n\nlift off is by far the worst track on this album  i dont know whose bright idea this was\n\nid give it 35 stars if amazon allowed that  it youre fans of both curious or just believe in hype then this is definitely for you  if not dont bother  since there is nothing else out really rap wise i guess this will have to do for now",
+    "rating": 3.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.9392373561859131,
+        "Text": "its okay",
+        "BeginOffset": 0,
+        "EndOffset": 8
+      },
+      {
+        "Score": 0.992233395576477,
+        "Text": "something epic",
+        "BeginOffset": 105,
+        "EndOffset": 119
+      },
+      {
+        "Score": 0.8385698795318604,
+        "Text": "a kanye west albumbe",
+        "BeginOffset": 168,
+        "EndOffset": 188
+      },
+      {
+        "Score": 0.9960592985153198,
+        "Text": "tracks",
+        "BeginOffset": 202,
+        "EndOffset": 208
+      },
+      {
+        "Score": 0.9463486671447754,
+        "Text": "didnt",
+        "BeginOffset": 214,
+        "EndOffset": 219
+      },
+      {
+        "Score": 0.9993911385536194,
+        "Text": "the cut",
+        "BeginOffset": 225,
+        "EndOffset": 232
+      },
+      {
+        "Score": 0.9918673634529114,
+        "Text": "my beautiful dark twisted fantasy",
+        "BeginOffset": 237,
+        "EndOffset": 270
+      },
+      {
+        "Score": 0.9985448122024536,
+        "Text": "a followup",
+        "BeginOffset": 274,
+        "EndOffset": 284
+      },
+      {
+        "Score": 0.884364902973175,
+        "Text": "that albumand jay",
+        "BeginOffset": 288,
+        "EndOffset": 305
+      },
+      {
+        "Score": 0.9985595941543579,
+        "Text": "last minute",
+        "BeginOffset": 321,
+        "EndOffset": 332
+      },
+      {
+        "Score": 0.9992989301681519,
+        "Text": "jay",
+        "BeginOffset": 346,
+        "EndOffset": 349
+      },
+      {
+        "Score": 0.9758827686309814,
+        "Text": "sympathy",
+        "BeginOffset": 366,
+        "EndOffset": 374
+      },
+      {
+        "Score": 0.9986119270324707,
+        "Text": "another kanyemotivated vehicle",
+        "BeginOffset": 396,
+        "EndOffset": 426
+      },
+      {
+        "Score": 0.9528502225875854,
+        "Text": "his wanning popularity",
+        "BeginOffset": 442,
+        "EndOffset": 464
+      },
+      {
+        "Score": 0.9085843563079834,
+        "Text": "808s  heartbreak",
+        "BeginOffset": 471,
+        "EndOffset": 487
+      },
+      {
+        "Score": 0.9939081072807312,
+        "Text": "the album",
+        "BeginOffset": 489,
+        "EndOffset": 498
+      },
+      {
+        "Score": 0.9984288215637207,
+        "Text": "the tracks",
+        "BeginOffset": 510,
+        "EndOffset": 520
+      },
+      {
+        "Score": 0.9981833100318909,
+        "Text": "the two biggest names",
+        "BeginOffset": 559,
+        "EndOffset": 580
+      },
+      {
+        "Score": 0.8276105523109436,
+        "Text": "hiphop today",
+        "BeginOffset": 584,
+        "EndOffset": 596
+      },
+      {
+        "Score": 0.926569938659668,
+        "Text": "the second coming or something",
+        "BeginOffset": 628,
+        "EndOffset": 658
+      },
+      {
+        "Score": 0.9991918802261353,
+        "Text": "the ability",
+        "BeginOffset": 670,
+        "EndOffset": 681
+      },
+      {
+        "Score": 0.9987859129905701,
+        "Text": "certain tracks",
+        "BeginOffset": 695,
+        "EndOffset": 709
+      },
+      {
+        "Score": 0.745677649974823,
+        "Text": "kanye",
+        "BeginOffset": 717,
+        "EndOffset": 722
+      },
+      {
+        "Score": 0.9939922094345093,
+        "Text": "his element",
+        "BeginOffset": 749,
+        "EndOffset": 760
+      },
+      {
+        "Score": 0.9719445109367371,
+        "Text": "his lyrics postgraduation",
+        "BeginOffset": 818,
+        "EndOffset": 843
+      },
+      {
+        "Score": 0.9973920583724976,
+        "Text": "tracks",
+        "BeginOffset": 847,
+        "EndOffset": 853
+      },
+      {
+        "Score": 0.9810507893562317,
+        "Text": "conscience rappers",
+        "BeginOffset": 872,
+        "EndOffset": 890
+      },
+      {
+        "Score": 0.9991490840911865,
+        "Text": "new day",
+        "BeginOffset": 896,
+        "EndOffset": 903
+      },
+      {
+        "Score": 0.9988647699356079,
+        "Text": "the joy",
+        "BeginOffset": 908,
+        "EndOffset": 915
+      },
+      {
+        "Score": 0.99356609582901,
+        "Text": "jay  jay",
+        "BeginOffset": 921,
+        "EndOffset": 929
+      },
+      {
+        "Score": 0.7394299507141113,
+        "Text": "supreme and",
+        "BeginOffset": 946,
+        "EndOffset": 957
+      },
+      {
+        "Score": 0.5015568137168884,
+        "Text": "kanye",
+        "BeginOffset": 964,
+        "EndOffset": 969
+      },
+      {
+        "Score": 0.6002382636070251,
+        "Text": "just about",
+        "BeginOffset": 986,
+        "EndOffset": 996
+      },
+      {
+        "Score": 0.8395026922225952,
+        "Text": "every other track",
+        "BeginOffset": 997,
+        "EndOffset": 1014
+      },
+      {
+        "Score": 0.9041492342948914,
+        "Text": "nas",
+        "BeginOffset": 1020,
+        "EndOffset": 1023
+      },
+      {
+        "Score": 0.998969316482544,
+        "Text": "paris",
+        "BeginOffset": 1027,
+        "EndOffset": 1032
+      },
+      {
+        "Score": 0.8670207858085632,
+        "Text": "my bitch\n\nlift",
+        "BeginOffset": 1042,
+        "EndOffset": 1056
+      },
+      {
+        "Score": 0.8692838549613953,
+        "Text": "far the worst track",
+        "BeginOffset": 1067,
+        "EndOffset": 1086
+      },
+      {
+        "Score": 0.8990551829338074,
+        "Text": "this album  i dont",
+        "BeginOffset": 1090,
+        "EndOffset": 1108
+      },
+      {
+        "Score": 0.9293832182884216,
+        "Text": "whose bright idea",
+        "BeginOffset": 1114,
+        "EndOffset": 1131
+      },
+      {
+        "Score": 0.9983925819396973,
+        "Text": "35 stars",
+        "BeginOffset": 1153,
+        "EndOffset": 1161
+      },
+      {
+        "Score": 0.9947482943534851,
+        "Text": "amazon",
+        "BeginOffset": 1165,
+        "EndOffset": 1171
+      },
+      {
+        "Score": 0.9980151653289795,
+        "Text": "fans",
+        "BeginOffset": 1195,
+        "EndOffset": 1199
+      },
+      {
+        "Score": 0.8315007090568542,
+        "Text": "both curious",
+        "BeginOffset": 1203,
+        "EndOffset": 1215
+      },
+      {
+        "Score": 0.9989727735519409,
+        "Text": "hype",
+        "BeginOffset": 1235,
+        "EndOffset": 1239
+      },
+      {
+        "Score": 0.49776265025138855,
+        "Text": "rap",
+        "BeginOffset": 1332,
+        "EndOffset": 1335
+      },
+      {
+        "Score": 0.6561586260795593,
+        "Text": "wise i",
+        "BeginOffset": 1336,
+        "EndOffset": 1342
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        0,
+        1,
+        6,
+        14,
+        21,
+        24,
+        27,
+        33,
+        38,
+        41,
+        52,
+        54,
+        57,
+        72,
+        74,
+        75,
+        81,
+        83,
+        85,
+        91,
+        100,
+        117,
+        120,
+        122,
+        127,
+        131,
+        136,
+        144,
+        157,
+        164,
+        169,
+        171,
+        172,
+        173,
+        174,
+        187,
+        193,
+        198,
+        200,
+        206,
+        271,
+        273,
+        293,
+        300,
+        307,
+        311,
+        327,
+        347,
+        423,
+        436,
+        446,
+        455,
+        456,
+        462,
+        518,
+        693,
+        703,
+        720,
+        722,
+        751,
+        802,
+        811,
+        840,
+        892,
+        959
+      ],
+      "values": [
+        14.956881784938547,
+        2.896056110175439,
+        5.199227588643822,
+        2.3415833997658484,
+        2.6546803285227365,
+        5.3410109739815175,
+        2.703389220058293,
+        11.911388804166831,
+        6.283055407196882,
+        2.9747345633400366,
+        3.019246185145911,
+        2.9864972231358964,
+        3.0480183159495478,
+        3.2211659623281426,
+        6.438494121125482,
+        3.374670986413444,
+        3.2951391545099638,
+        3.2847793600125237,
+        3.369224798008205,
+        3.37212051515587,
+        6.881538302230312,
+        3.534699381074952,
+        3.5680780012387694,
+        3.557644938424822,
+        3.752738182174588,
+        3.5809362122659736,
+        3.6495876755961616,
+        7.328979987797721,
+        3.696819705954753,
+        3.7028564340085444,
+        3.7254197964059617,
+        3.8085079222442584,
+        3.811057550287244,
+        3.721243960043665,
+        3.81642080058827,
+        3.8054206592818463,
+        7.619685261859867,
+        3.8988649472194044,
+        3.853522030805003,
+        3.945805340093742,
+        4.1265979508674215,
+        4.128266007968119,
+        4.151915758851711,
+        4.2021300134798585,
+        4.174476031111885,
+        4.210795109668177,
+        4.236784909902177,
+        4.351409559282328,
+        4.538710101697379,
+        4.675500497719574,
+        4.5753620771207375,
+        4.59500285874946,
+        4.7229209467918265,
+        4.593672540607277,
+        4.714484620769874,
+        5.0466457316192885,
+        5.0599076879111715,
+        5.094401299424117,
+        5.062666310350251,
+        5.132175373568342,
+        5.257217035670617,
+        5.402245791900248,
+        5.242102107205749,
+        5.423661178259369,
+        5.362462832961907
+      ]
+    }
+  },
+  {
+    "review": "half of the digipack arrived crushed but disc was fine im only mentioning this because cd was new other than that im happy with purchase",
+    "rating": 5.0,
+    "sentiment": "mixed",
+    "key_phrases": [
+      {
+        "Score": 0.9064061641693115,
+        "Text": "half",
+        "BeginOffset": 0,
+        "EndOffset": 4
+      },
+      {
+        "Score": 0.9998708367347717,
+        "Text": "the digipack",
+        "BeginOffset": 8,
+        "EndOffset": 20
+      },
+      {
+        "Score": 0.9617307782173157,
+        "Text": "disc",
+        "BeginOffset": 41,
+        "EndOffset": 45
+      },
+      {
+        "Score": 0.559543788433075,
+        "Text": "im",
+        "BeginOffset": 55,
+        "EndOffset": 57
+      },
+      {
+        "Score": 0.9937280416488647,
+        "Text": "cd",
+        "BeginOffset": 87,
+        "EndOffset": 89
+      },
+      {
+        "Score": 0.8313566446304321,
+        "Text": "new other",
+        "BeginOffset": 94,
+        "EndOffset": 103
+      },
+      {
+        "Score": 0.7945093512535095,
+        "Text": "im",
+        "BeginOffset": 114,
+        "EndOffset": 116
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        4,
+        21,
+        35,
+        68,
+        201,
+        212,
+        226,
+        419,
+        484
+      ],
+      "values": [
+        1.4521504955131181,
+        2.6546803285227365,
+        5.631401708439956,
+        3.504902018270007,
+        3.8278523060596608,
+        3.942888468798619,
+        3.8998608640430814,
+        4.694287914070418,
+        4.60584416148009
+      ]
+    }
+  },
+  {
+    "review": "one of my all time favorite albums a must have for any hiphop lover",
+    "rating": 5.0,
+    "sentiment": "positive",
+    "key_phrases": [
+      {
+        "Score": 0.757298469543457,
+        "Text": "all time",
+        "BeginOffset": 10,
+        "EndOffset": 18
+      },
+      {
+        "Score": 0.8482082486152649,
+        "Text": "favorite albums",
+        "BeginOffset": 19,
+        "EndOffset": 34
+      }
+    ],
+    "tfidf_features": {
+      "type": 0,
+      "size": 1000,
+      "indices": [
+        5,
+        13,
+        20,
+        45,
+        88
+      ],
+      "values": [
+        1.594489699595127,
+        2.27066461031179,
+        2.6402131867702163,
+        2.867805576777379,
+        3.241694692234899
+      ]
+    }
+  }
+]
