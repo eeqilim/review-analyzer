@@ -1,88 +1,67 @@
 import boto3
-import json
-import time
-from collections import Counter
 import ast
+import time
+import logging
+import json
+from collections import Counter
 
 athena = boto3.client("athena")
 s3 = boto3.client("s3")
-comprehend = boto3.client("comprehend", region_name="us-west-2")
+comprehend = boto3.client("comprehend")
 
-DATABASE = "reviews_db"
-TABLE = "output"
 OUTPUT_BUCKET = "pj-cs6240"
-PREFIX = "lambda"
-ATHENA_OUTPUT = f"s3://{OUTPUT_BUCKET}/{PREFIX}/athena_results/"
+OUTPUT_PREFIX = "lambda"
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 
-def run_athena_query(query):
-    resp = athena.start_query_execution(
+def run_athena_query(query, database="reviews_db"):
+    response = athena.start_query_execution(
         QueryString=query,
-        QueryExecutionContext={"Database": DATABASE},
-        ResultConfiguration={"OutputLocation": ATHENA_OUTPUT}
+        QueryExecutionContext={"Database": database},
+        ResultConfiguration={"OutputLocation": f"s3://{OUTPUT_BUCKET}/athena-results/"}
     )
-    qid = resp["QueryExecutionId"]
+    query_id = response["QueryExecutionId"]
 
+    # Wait for query to finish
     while True:
-        result = athena.get_query_execution(QueryExecutionId=qid)
-        state = result["QueryExecution"]["Status"]["State"]
-        if state in ["SUCCEEDED", "FAILED", "CANCELLED"]:
+        status = athena.get_query_execution(QueryExecutionId=query_id)["QueryExecution"]["Status"]["State"]
+        if status in ["SUCCEEDED", "FAILED", "CANCELLED"]:
             break
-        time.sleep(1)
+        time.sleep(2)
 
-    if state != "SUCCEEDED":
-        reason = result["QueryExecution"]["Status"].get("StateChangeReason", "Unknown error")
-        raise Exception(f"Athena query failed: {state}. Reason: {reason}")
+    if status != "SUCCEEDED":
+        raise Exception(f"Athena query failed: {status}")
 
-    results = athena.get_query_results(QueryExecutionId=qid)
-    return results["ResultSet"]["Rows"][1:]
+    results = athena.get_query_results(QueryExecutionId=query_id)["ResultSet"]["Rows"]
+    headers = [h["VarCharValue"] for h in results[0]["Data"]]
+    data = []
+
+    for row in results[1:]:
+        row_data = {}
+        for i, col in enumerate(row["Data"]):
+            row_data[headers[i]] = col.get("VarCharValue", None)
+        data.append(row_data)
+    return data
+
+
+def batch_comprehend_call(func, texts, batch_size=25):
+    results = []
+
+    for i in range(0, len(texts), batch_size):
+        batch = [t[:5000] for t in texts[i:i + batch_size]]  # truncate to 5k chars
+        response = func(TextList=batch, LanguageCode="en")
+        results.extend(response["ResultList"])
+    return results
 
 
 def classify_sentiment(texts):
-    sentiments = []
-    batch_size = 25
-
-    for i in range(0, len(texts), batch_size):
-        batch = texts[i:i + batch_size]
-        try:
-            truncated_batch = [t[:5000] for t in batch]
-            response = comprehend.batch_detect_sentiment(
-                TextList=truncated_batch,
-                LanguageCode='en'
-            )
-
-            for result in response['ResultList']:
-                sentiments.append(result['Sentiment'].lower())
-
-        except Exception:
-            for text in batch:
-                try:
-                    res = comprehend.detect_sentiment(Text=text[:5000], LanguageCode='en')
-                    sentiments.append(res['Sentiment'].lower())
-                except:
-                    sentiments.append('neutral')
-
-    return sentiments
+    return batch_comprehend_call(comprehend.batch_detect_sentiment, texts)
 
 
 def extract_key_phrases(texts):
-    phrases_all = []
-    batch_size = 25
-
-    for i in range(0, len(texts), batch_size):
-        batch = texts[i:i + batch_size]
-        try:
-            truncated_batch = [t[:5000] for t in batch]
-            response = comprehend.batch_detect_key_phrases(TextList=truncated_batch, LanguageCode='en')
-
-            for result in response['ResultList']:
-                phrases_all.extend([kp['Text'].lower() for kp in result['KeyPhrases'] if kp['Score'] > 0.8])
-
-        except Exception as e:
-            print(f"Key phrase extraction error: {e}")
-            continue
-
-    return phrases_all
+    return batch_comprehend_call(comprehend.batch_detect_key_phrases, texts)
 
 
 def parse_tfidf(tfidf_raw):
@@ -107,130 +86,113 @@ def parse_tfidf(tfidf_raw):
             return None
 
 
-def generate_insights_summary(sentiment_records):
-    if not sentiment_records:
-        return None
+def generate_insights_summary(review_records):
+    if not review_records:
+        return {}
 
-    positive_reviews = [r for r in sentiment_records if r['sentiment'] == 'positive']
-    negative_reviews = [r for r in sentiment_records if r['sentiment'] == 'negative']
+    positive_reviews = [r for r in review_records if r['sentiment'] == 'positive']
+    negative_reviews = [r for r in review_records if r['sentiment'] == 'negative']
+    neutral_reviews = [r for r in review_records if r['sentiment'] == 'neutral']
+    mixed_reviews = [r for r in review_records if r['sentiment'] == 'mixed']
 
-    positive_texts = [r['review'] for r in positive_reviews[:50]]
-    negative_texts = [r['review'] for r in negative_reviews[:50]]
+    # Key phrases
+    positive_phrases = [p["Text"].lower() for r in positive_reviews for p in r.get("key_phrases", [])]
+    negative_phrases = [p["Text"].lower() for r in negative_reviews for p in r.get("key_phrases", [])]
 
-    positive_phrases = extract_key_phrases(positive_texts) if positive_texts else []
-    negative_phrases = extract_key_phrases(negative_texts) if negative_texts else []
-
+    # Top topics
     positive_topics = Counter(positive_phrases).most_common(10)
     negative_topics = Counter(negative_phrases).most_common(10)
 
+    # Sample reviews
     positive_samples = [r['review'][:200] + "..." for r in positive_reviews[:3]]
     negative_samples = [r['review'][:200] + "..." for r in negative_reviews[:3]]
 
-    summary_parts = []
-
-    if positive_topics:
-        summary_parts.append(f"Customers frequently praise: {', '.join([t[0] for t in positive_topics[:5]])}")
-
-    if negative_topics:
-        summary_parts.append(f"Common complaints include: {', '.join([t[0] for t in negative_topics[:5]])}")
-
-    return {
+    # Build summary
+    summary = {
+        "total_reviews": len(review_records),
+        "sentiment_counts": {
+            "positive": len(positive_reviews),
+            "negative": len(negative_reviews),
+            "neutral": len(neutral_reviews),
+            "mixed": len(mixed_reviews)
+        },
         "common_positive_topics": [{"topic": t[0], "mentions": t[1]} for t in positive_topics],
         "common_negative_topics": [{"topic": t[0], "mentions": t[1]} for t in negative_topics],
         "positive_review_samples": positive_samples,
-        "negative_review_samples": negative_samples,
-        "narrative_summary": ". ".join(
-            summary_parts) + "." if summary_parts else "Reviews discuss various aspects of the product."
+        "negative_review_samples": negative_samples
     }
 
+    return summary
 
-def summarize_reviews(sentiment_records, asin):
-    if not sentiment_records:
-        return {"error": "No reviews found"}
 
-    counts = {"positive": 0, "negative": 0, "neutral": 0, "mixed": 0}
-    total_rating = 0
-
-    for record in sentiment_records:
-        sentiment = record.get("sentiment", "neutral")
-        counts[sentiment] = counts.get(sentiment, 0) + 1
-        total_rating += record.get("rating", 0)
-
-    total = len(sentiment_records)
-    avg_rating = total_rating / total if total > 0 else 0
-    insights = generate_insights_summary(sentiment_records)
-
+def summarize_reviews(summary, asin):
     return {
-        "asin": asin,
-        "total_reviews": total,
-        "average_rating": round(avg_rating, 2),
-        "sentiment_distribution": {k: {"count": v, "percentage": round(v / total * 100, 1)} for k, v in counts.items()},
-        "sentiment_summary": f"{counts['positive']} positive, {counts['negative']} negative, {counts['neutral']} neutral, {counts['mixed']} mixed. Avg rating: {avg_rating:.2f}",
-        "content_insights": insights
+        "ASIN": asin,
+        "Summary": summary,
+        "Timestamp": int(time.time())
     }
 
 
 def save_to_s3(data, key):
-    s3.put_object(Bucket=OUTPUT_BUCKET, Key=f"{PREFIX}/{key}", Body=json.dumps(data, indent=2))
+    s3.put_object(
+        Bucket=OUTPUT_BUCKET,
+        Key=key,
+        Body=json.dumps(data, indent=2).encode("utf-8"),
+        ContentType="application/json"
+    )
+
+
+def process_asin(asin, max_reviews=None):
+    query = f"""
+        SELECT reviewText, overall, tfidf_features
+        FROM output
+        WHERE asin = '{asin}'
+        {f'LIMIT {max_reviews}' if max_reviews else ''}
+    """
+    rows = run_athena_query(query)
+    if not rows:
+        logger.info(f"No reviews found for ASIN {asin}")
+        return
+
+    texts = [r.get("reviewText") for r in rows if r.get("reviewText")]
+    ratings = [float(r.get("overall", 0)) for r in rows]
+    tfidf_vectors = [r.get("tfidf_features") for r in rows]
+
+    if not texts:
+        logger.info(f"No valid review text for ASIN {asin}")
+        return
+
+    sentiment_results = classify_sentiment(texts)
+    key_phrase_results = extract_key_phrases(texts)
+    parsed_tfidf = [parse_tfidf(vec) for vec in tfidf_vectors]
+
+    review_records = []
+    for i, text in enumerate(texts):
+        review_records.append({
+            "review": text,
+            "rating": ratings[i],
+            "sentiment": sentiment_results[i]["Sentiment"].lower(),
+            "key_phrases": key_phrase_results[i].get("KeyPhrases", []),
+            "tfidf_features": parsed_tfidf[i]
+        })
+
+    summary = generate_insights_summary(review_records)
+    final_summary = summarize_reviews(summary, asin)
+
+    save_to_s3(review_records, f"{OUTPUT_PREFIX}/{asin}/reviews.json")
+    save_to_s3(final_summary, f"{OUTPUT_PREFIX}/{asin}/summary.json")
 
 
 def lambda_handler(event, context):
-    asin = event.get("asin", "B0002XL2V6")
+    asin_rows = run_athena_query("SELECT DISTINCT asin FROM output")
+    asins = [r["asin"] for r in asin_rows]
 
-    query = f'''
-        SELECT asin, reviewtext, overall, tfidf_features
-        FROM "{DATABASE}"."{TABLE}"
-        WHERE asin = '{asin}'
-        LIMIT 200
-    '''
+    asins_to_process = asins[:10]  # limit to first 10 ASINs
 
-    try:
-        rows = run_athena_query(query)
-    except Exception as e:
-        return {"status": "error", "message": str(e), "asin": asin}
-
-    if not rows:
-        return {"status": "no_reviews_found", "asin": asin}
-
-    sentiment_records = []
-    for r in rows:
-        try:
-            data = r["Data"]
-            text = data[1].get("VarCharValue")
-            rating = float(data[2].get("VarCharValue"))
-            tfidf_vector = parse_tfidf(data[3].get("VarCharValue"))
-
-            if text and rating is not None:
-                sentiment_records.append({
-                    "asin": asin,
-                    "review": text,
-                    "rating": rating,
-                    "tfidf_features": tfidf_vector
-                })
-
-        except Exception as e:
-            print(f"Error parsing row: {e}")
-            continue
-
-    if not sentiment_records:
-        return {"status": "no_valid_reviews", "asin": asin}
-
-    texts = [r["review"] for r in sentiment_records]
-    sentiments = classify_sentiment(texts)
-    for i, s in enumerate(sentiments):
-        sentiment_records[i]["sentiment"] = s
-
-    summary = summarize_reviews(sentiment_records, asin)
-    timestamp = int(time.time())
-
-    save_to_s3(sentiment_records, f"{asin}/{timestamp}_reviews.json")
-    save_to_s3(summary, f"{asin}/{timestamp}_summary.json")
+    for asin in asins_to_process:
+        process_asin(asin, max_reviews=200)  # limit to 200 reviews per ASIN
 
     return {
         "status": "success",
-        "asin": asin,
-        "reviews_processed": len(sentiment_records),
-        "summary": summary,
-        "reviews": sentiment_records,
-        "s3_location": f"s3://{OUTPUT_BUCKET}/{PREFIX}/{asin}/"
+        "asin_count": len(asins_to_process)
     }
