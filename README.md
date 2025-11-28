@@ -4,14 +4,14 @@ This project implements an end-to-end AWS pipeline that processes, analyzes, and
 
 ## Architecture Overview
 
-| Component          | Purpose                                                 |
-|--------------------|---------------------------------------------------------|
-| **Amazon S3**      | Data lake for raw input, ETL output, and Lambda results |
-| **AWS Glue**       | Distributed ETL + NLP preprocessing (Spark)             |
-| **AWS Athena**     | SQL access over processed review data                   |
-| **AWS Lambda**     | Real-time sentiment + keyphrase analysis                |
-| **AWS Comprehend** | NLP services for sentiment and keyphrases               |
-| **Streamlit**      | Frontend to explore ASIN-level analytics                |
+| Component          | Purpose                                                                       |
+| ------------------ | ----------------------------------------------------------------------------- |
+| **Amazon S3**      | Data lake for raw input, ETL output, and Lambda results                       |
+| **AWS Glue**       | Distributed ETL + NLP preprocessing (Spark), publishes CloudWatch ETL metrics |
+| **AWS Athena**     | SQL access over processed review data                                         |
+| **AWS Lambda**     | Real-time sentiment + keyphrase analysis                                      |
+| **AWS Comprehend** | NLP services for sentiment and keyphrases                                     |
+| **Streamlit**      | Frontend to explore ASIN-level analytics                                      |
 
 ## Prerequisites
 
@@ -24,14 +24,14 @@ Download the raw Amazon review datasets from:
 
 **https://nijianmo.github.io/amazon/index.html#files**
 
-After downloading, upload the JSON files to `s3://pj-cs6240/input/`
+After downloading, upload the JSON files to `s3://<bucket-name>/input/`
 
 ## Step 1: Create S3 Buckets
 
 Create an S3 bucket with the following structure:
 
 ```
-s3://pj-cs6240/
+s3://<bucket-name>/
 ├── input/          # Raw JSON review files
 ├── output/         # Cleaned Parquet files from Glue ETL
 └── lambda/         # Lambda outputs (sentiment + summaries)
@@ -40,7 +40,7 @@ s3://pj-cs6240/
 **Instructions:**
 
 1. Go to AWS S3 Console
-2. Create bucket: `pj-cs6240`
+2. Create bucket: `<bucket-name>`
 3. Create the three folders listed above
 4. Upload your downloaded review JSON files to the `input/` folder
 
@@ -51,9 +51,9 @@ s3://pj-cs6240/
 1. Navigate to **IAM → Roles → Create role**
 2. Select **Glue** as the trusted entity
 3. Attach the following policies:
-    - `AmazonS3FullAccess`
-    - `AWSGlueServiceRole`
-    - `AmazonAthenaFullAccess`
+   - `AmazonS3FullAccess`
+   - `AWSGlueServiceRole`
+   - `AmazonAthenaFullAccess`
 4. Name the role: `GlueAmazonReviewsRole`
 5. Click **Create role**
 
@@ -62,10 +62,10 @@ s3://pj-cs6240/
 1. Navigate to **IAM → Roles → Create role**
 2. Select **Lambda** as the trusted entity
 3. Attach the following policies:
-    - `AmazonS3FullAccess`
-    - `AmazonAthenaFullAccess`
-    - `AWSGlueConsoleFullAccess`
-    - `CloudWatchLogsFullAccess`
+   - `AmazonS3FullAccess`
+   - `AmazonAthenaFullAccess`
+   - `AWSGlueConsoleFullAccess`
+   - `CloudWatchLogsFullAccess`
 4. Name the role: `LambdaAmazonReviewsRole`
 5. Click **Create role**
 
@@ -102,24 +102,24 @@ s3://pj-cs6240/
 
 1. Navigate to **AWS Glue → ETL Jobs → Create job**
 2. Configure the job:
-    - **Name**: `preprocess_reviews`
-    - **IAM Role**: `GlueAmazonReviewsRole`
-    - **Type**: Spark (Python)
-    - **Script**: Copy and paste the contents of `glue.py`
+   - **Name**: `preprocess_reviews`
+   - **IAM Role**: `GlueAmazonReviewsRole`
+   - **Type**: Spark (Python)
+   - **Script**: Copy and paste the contents of `glue.py`
 3. Save and run the job
-4. Verify output in `s3://pj-cs6240/output/` (should contain Parquet files)
+4. Verify output in `s3://<bucket-name>/output/` (should contain Parquet files)
 
 ## Step 4: Create Glue Crawler
 
 1. Navigate to **AWS Glue → Crawlers → Create crawler**
 2. Configure the crawler:
-    - **Name**: `crawler_reviews`
-    - **Data source**: S3
-    - **S3 path**: `s3://pj-cs6240/output/`
-    - **IAM Role**: `GlueAmazonReviewsRole`
-    - **Frequency**: Run on demand
-    - **Output database**: `reviews_db` (create if it doesn't exist)
-    - **Table prefix**: Leave blank
+   - **Name**: `crawler_reviews`
+   - **Data source**: S3
+   - **S3 path**: `s3://<bucket-name>/output/`
+   - **IAM Role**: `GlueAmazonReviewsRole`
+   - **Frequency**: Run on demand
+   - **Output database**: `reviews_db` (create if it doesn't exist)
+   - **Table prefix**: Leave blank
 3. Click **Create** and then **Run crawler**
 
 ### Verify the Table
@@ -136,17 +136,17 @@ SHOW
 TABLES IN `reviews_db`;
 
 -- Describe table schema
-DESCRIBE output;
+DESCRIBE reviews_db.output;
 ```
 
 ## Step 5: Deploy Lambda Function
 
 1. Navigate to **AWS Lambda → Create function**
 2. Configure the function:
-    - **Name**: `lambda_sentiment`
-    - **Runtime**: Python 3.14
-    - **Execution role**: Use existing role → `LambdaAmazonReviewsRole`
-    - **Timeout**: 30 seconds (under Configuration → General configuration)
+   - **Name**: `lambda_sentiment`
+   - **Runtime**: Python 3.14
+   - **Execution role**: Use existing role → `LambdaAmazonReviewsRole`
+   - **Timeout**: 1 min (under Configuration → General configuration)
 3. Copy and paste the code from `lambda.py`
 4. Click **Deploy**
 
@@ -196,3 +196,9 @@ streamlit run app.py
 ```
 
 The app should open in your browser at `http://localhost:8501`.
+
+## Step 7: CloudWatch Monitoring
+
+**View Metrics:**
+
+CloudWatch → Metrics → All metrics → Glue → Metrics with no dimensions
