@@ -1,0 +1,8 @@
+Completed Jobs (3)
+Job Id ▾	Description	Submitted	Duration	Stages: Succeeded/Total	Tasks (for all stages): Succeeded/Total
+2	showString at NativeMethodAccessorImpl.java:0
+showString at NativeMethodAccessorImpl.java:0	Monday, December 8, 2025 at 1:57:22 AM	0.26 s	1/1	1/1
+1	parquet at NativeMethodAccessorImpl.java:0
+parquet at NativeMethodAccessorImpl.java:0	Monday, December 8, 2025 at 1:57:15 AM	6.29 s	1/1	36/36
+0	json at NativeMethodAccessorImpl.java:0
+json at NativeMethodAccessorImpl.java:0	Monday, December 8, 2025 at 1:56:58 AM	15.28 s	1/1	36/36
